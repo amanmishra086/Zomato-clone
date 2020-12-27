@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/food"
+    android:id="@+id/restaurantLinearlayout"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RestaurantActivity">
+
+    <SearchView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:queryHint="Search Restaurant"
+        android:iconifiedByDefault="false"
+        android:layout_alignParentTop="true"
+        />
+
+    <Button
+        android:id="@+id/search"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        tools:listitem="@layout/restaurant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
